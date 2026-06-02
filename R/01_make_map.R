@@ -3,7 +3,7 @@ library(tmap)
 lsm = rast("data/lsm_blocks.tif")
 
 tm1 = tm_shape(lsm[[1]]) + 
-  tm_raster(col.scale = tm_scale_continuous(values = "viridis"))
+  tm_raster(col.scale = tm_scale_continuous(values = "cividis"))
 
 tm1
 
